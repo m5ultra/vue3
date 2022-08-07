@@ -12,7 +12,8 @@ const handleIncrement = () => {
 </script>
 
 <template>
-  <p class="detail">{{ data.name }} - {{ data.age }} - {{ store.counter }}</p>
+  <p class="detail">{{ data.name }} - {{ data.age }}</p>
+  <h2>{{ store.counter }}</h2>
   <el-button type="success" @click="handleIncrement">Increment++</el-button>
 </template>
 
