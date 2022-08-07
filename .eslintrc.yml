@@ -1,0 +1,22 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - plugin:vue/essential
+  - airbnb-base
+parserOptions:
+  ecmaVersion: latest
+  parser: '@typescript-eslint/parser'
+  sourceType: module
+plugins:
+  - vue
+  - '@typescript-eslint'
+rules:
+  {
+    semi: 0,
+    'import/no-unresolved': 0,
+    'import/no-extraneous-dependencies': 0,
+    'vue/no-multiple-template-root': 0,
+    'no-plusplus': 0,
+    'import/newline-after-import': 0,
+  }
