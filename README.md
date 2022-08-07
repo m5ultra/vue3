@@ -17,5 +17,4 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 
 ### Vite + ElementPlus + Tsx + Pinia + vue3.x
 
-
 ### https://juejin.cn/post/7101657189428756516#heading-7 pinia 教程 使用教学
