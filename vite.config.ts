@@ -22,6 +22,7 @@ export default defineConfig({
       '@': join(__dirname, 'src'),
       com: join(__dirname, 'src/components'),
       styl: join(__dirname, 'src/styl'),
+      view: join(__dirname, 'src/styl'),
     },
   },
 })

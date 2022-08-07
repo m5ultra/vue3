@@ -8,18 +8,13 @@
     <el-button type="danger">Danger</el-button>
     <el-button>中文</el-button>
   </div>
-  <Home />
 </template>
 
 <script lang="ts" setup>
 import { defineComponent } from 'vue'
-import Home from './Home.component'
 
 defineComponent({
   name: 'use-element-plus',
-  components: {
-    Home,
-  },
   setup() {
     return {}
   },
