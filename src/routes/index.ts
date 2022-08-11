@@ -4,6 +4,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'index',
+    redirect: '/pinia',
     component: () =>
       import(/* webpackChunkName: 'element-btns' */ '../views/Element.vue'),
     children: [
