@@ -1,32 +1,30 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    redirect: '/btns',
-  },
-  {
-    path: '/btns',
-    name: 'btns',
+    name: 'index',
     component: () =>
       import(/* webpackChunkName: 'element-btns' */ '../views/Element.vue'),
-  },
-  {
-    path: '/home',
-    name: 'home',
-    component: () =>
-      import(/* webpackChunkName: 'home' */ '../views/home.page.vue'),
-  },
-  {
-    path: '/tsx',
-    name: 'tsx',
-    component: () =>
-      import(/* webpackChunkName: 'tsx' */ '../components/Home.component'),
+    children: [
+      {
+        path: '/pinia',
+        name: 'pinia',
+        component: () =>
+          import(/* webpackChunkName: 'home' */ '../views/pinia.page.vue'),
+      },
+      {
+        path: '/tsx',
+        name: 'tsx',
+        component: () =>
+          import(/* webpackChunkName: 'tsx' */ '../components/Home.component'),
+      },
+    ],
   },
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 })
 

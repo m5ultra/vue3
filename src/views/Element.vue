@@ -8,6 +8,7 @@
     <el-button type="danger">Danger</el-button>
     <el-button>中文</el-button>
   </div>
+  <router-view />
 </template>
 
 <script lang="ts" setup>
@@ -25,6 +26,6 @@ defineComponent({
 .btns {
   display flex
   justify-content center
-  margin-top 50px
+  margin-top 25px
 }
 </style>
