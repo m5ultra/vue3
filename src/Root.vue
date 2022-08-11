@@ -1,6 +1,6 @@
 <template>
   <el-config-provider :size="size" :z-index="zIndex">
-    <router-view> </router-view>
+    <router-view />
   </el-config-provider>
 </template>
 

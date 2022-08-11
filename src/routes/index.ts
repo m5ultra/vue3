@@ -1,6 +1,6 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
-const routes: Array<any> = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
     redirect: '/btns',
@@ -8,12 +8,20 @@ const routes: Array<any> = [
   {
     path: '/btns',
     name: 'btns',
-    component: () => import(/* webpackChunkName: element-btns */ '../views/Element.vue'),
+    component: () =>
+      import(/* webpackChunkName: 'element-btns' */ '../views/Element.vue'),
   },
   {
     path: '/home',
     name: 'home',
-    component: () => import(/* webpackChunkName: home-btns */ '../views/Home.page.vue'),
+    component: () =>
+      import(/* webpackChunkName: 'home' */ '../views/home.page.vue'),
+  },
+  {
+    path: '/tsx',
+    name: 'tsx',
+    component: () =>
+      import(/* webpackChunkName: 'tsx' */ '../components/Home.component'),
   },
 ]
 

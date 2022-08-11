@@ -1,4 +1,6 @@
 import { defineConfig } from 'vite'
+// @ts-ignore
+import ElementPlus from 'unplugin-element-plus/vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -16,6 +18,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
     vueTsx(),
+    ElementPlus(),
   ],
   resolve: {
     alias: {
