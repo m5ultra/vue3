@@ -1,7 +1,22 @@
 <template>
   <div class="btns">
-    <el-button>Default</el-button>
-    <el-button type="primary">Primary</el-button>
+    <el-button
+      @click="
+        () => {
+          this.$router.push('pinia')
+        }
+      "
+      >Pinia</el-button
+    >
+    <el-button
+      @click="
+        () => {
+          this.$router.push('tsx')
+        }
+      "
+      type="primary"
+      >TSX 测试</el-button
+    >
     <el-button type="success">Success</el-button>
     <el-button type="info">Info</el-button>
     <el-button type="warning">Warning</el-button>
