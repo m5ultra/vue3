@@ -3,7 +3,7 @@
     <el-button
       @click="
         () => {
-          this.$router.push('pinia')
+          router.push('pinia')
         }
       "
       >Pinia</el-button
@@ -11,7 +11,7 @@
     <el-button
       @click="
         () => {
-          this.$router.push('tsx')
+          router.push('tsx')
         }
       "
       type="primary"
@@ -28,11 +28,16 @@
 
 <script lang="ts" setup>
 import { defineComponent } from 'vue'
-
+import { useRouter } from 'vue-router'
+const router = useRouter()
 defineComponent({
   name: 'use-element-plus',
   setup() {
-    return {}
+    return {
+      name: 'Dendi',
+      age: 88,
+      sex: 1,
+    }
   },
 })
 </script>
